@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    background-color: #5025d1;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar {
+    align-items: flex-end;
+
+
+}
+
+.navbar li {
+    display: inline-flex;
+    margin-right: 10px;
+   
+
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: background-color 300ms ease-in-out;
+
+}
+
+.navbar li a:hover {
+    color: #000;
+    background-color: #ddd;
+}
+
+#home .nome h1,
+h4 {
+
+    display: flex;
+    justify-content: center;
+}
+
+#home .nome span {
+    color: #5025d1;
+}
+
+#home .boxes h3 {
+    color: #000;
+
+}
+
+#home .boxes p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+}
+
+#home .boxes {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    padding: 1.2rem;
+
+}
+
+#home .boxes .quality {
+    border-radius: 6px;
+    width: 300px;
+    height: 200px;
+    background-color: #673de6;
+    transition: transform 0.3s ease-in-out;
+    background-color: #673de6;
+    box-shadow: black 10px 6px 30px;
+}
+
+#home .boxes .quality:hover {
+    transform: scale(1.1);
+   
+}
+
+#home .boxes .price {
+    border-radius: 6px;
+    width: 300px;
+    height: 200px;
+    background-color: #673de6;
+    transition: transform 0.3s ease-in-out;
+    background-color: #673de6;
+    box-shadow: black 10px 6px 30px;
+}
+
+#home .boxes .price:hover {
+    transform: scale(1.1);
+    border: solid 3px #000;
+}
+
+#home .boxes .quality:hover {
+    transform: scale(1.1);
+    border: solid 3px #000;
+}
+
+#home .boxes .import:hover {
+    transform: scale(1.1);
+    border: solid 3px #000;
+}
+
+#home .boxes .security:hover {
+    transform: scale(1.1);
+    border: solid 3px #000;
+}
+
+#home .boxes .security {
+    border-radius: 6px;
+    width: 300px;
+    height: 200px;
+    background-color: #673de6;
+    transition: transform 0.3s ease-in-out;
+    background-color: #673de6;
+    box-shadow: black 10px 6px 30px;
+}
+
+#home .boxes .security:hover {
+    transform: scale(1.1);
+}
+
+#home .boxes .import {
+    border-radius: 6px;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #673de6;
+    box-shadow: black 10px 6px 30px;
+}
+
+#home .boxes .import:hover {
+    transform: scale(1.1);
+}
+
+#home .boxes img {
+    width: 60px;
+    margin-top: 3px;
+}
+
+#type-sales .boxes {
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 350px;
+    padding: 30px;
+    color: #fff;
+
+}
+
+
+#type-sales .boxes .teclados img {
+    width: 300px;
+    filter: drop-shadow(10px 10px 10px  black);
+}
+
+#type-sales .boxes .monitor img {
+    width: 250px;
+    filter: drop-shadow(10px 10px 10px  black);
+}
+
+#type-sales .boxes .teclados {
+    border-radius: 6px;
+    width: 400px;
+    height: 200px;
+    background-color: #673de6;
+    text-align: center;
+    box-shadow: black 10px 6px 40px;
+}
+
+
+#type-sales .boxes .monitor {
+    border-radius: 6px;
+    width: 400px;
+    height: 200px;
+    background-color: #673de6;
+    gap: 100px;
+    text-align: center;
+    box-shadow: black 10px 6px 40px;
+    
+}
+
+#type-sales .boxes h1 {
+    font-size: 20px;
+}
+
+#type-sales .sales {
+    border-radius: 6px;
+    background-color: #5025d1;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+#type-sales .sales{
+    transition: transform 0.3s ease-in-out;
+}
+#type-sales .sales:hover  {
+        transform: scale(1.1);
+}
+
+#most-saled .boxes {
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 150px;
+    padding: 30px;
+}
+#most-saled .mouse-1 {
+    background-color: #673de6;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    height: 150px;
+}
+
+#most-saled .mouse-1  img {
+    width: 100px;
+    filter: drop-shadow(8px 8px 15px  black);
+    
+}
+#most-saled  .seta {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+#most-saled .mouse-1 .setinha{
+   font-size: 30px;
+}
+#most-saled .mouse-2  img {
+    width: 130px;
+    filter: drop-shadow(8px 8px 15px  black);
+    
+}
+#most-saled .mouse-2 {
+    background-color: #673de6;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+#most-saled .mouse-2 .setinha{
+    font-size: 30px;
+ }
+
+#most-saled .mouse-1 span {
+    color: red;
+}
+
+#most-saled .mouse-2 span {
+    color: #00ff88;
+}
+
+
+
+
+#most-saled .nvme img {
+    width: 150px;
+    padding: 30px;
+    filter: drop-shadow(8px 8px 15px  black);
+}
+    
+#most-saled .nvme {
+    background-color: #673de6;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+
+#most-saled .nvme .setinha{
+    font-size: 30px;
+  
+ }
+
+ #most-saled .nvme .x {
+    color: red;
+ }
+
+ #most-saled .nvme .p {
+    color: blue;
+ }
+
+ #most-saled .nvme .g {
+    color: rgb(0, 255, 0);
+ }
+
+
+
+ #most-saled .box-baixo {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+#most-saled .teclado-1 img {
+    width: 200px;
+    padding: 30px;
+    filter: drop-shadow(8px 8px 15px  black);
+}
+    
+#most-saled .teclado-1 {
+    background-color: #673de6;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+
+#most-saled .fone-1 .setinha{
+    font-size: 30px;
+  
+ }
+
+
+
+ #most-saled .fone-1 img {
+    width: 200px;
+    padding: 30px;
+    filter: drop-shadow(8px 8px 15px  black);
+}
+    
+#most-saled .fone-1 {
+    background-color: #673de6;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+
+#most-saled .teclado-1 .setinha{
+    font-size: 30px;
+  
+ }
+
+    

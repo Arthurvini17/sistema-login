@@ -9,7 +9,7 @@ include ('../models/registro.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/registrar.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 
 <?php
@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         if ($resultado){
             echo 'Cadastro realizado com sucesso';
         } else {
-            echo "erro ao  cadastrar pessoa";
+            echo "Pessoa ja cadastrada";
         }
     }
 ?>
