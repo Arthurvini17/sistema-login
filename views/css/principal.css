@@ -51,13 +51,21 @@ header {
 
 #home .nome h1,
 h4 {
-
+    font-size: 40px;
     display: flex;
     justify-content: center;
 }
 
-#home .nome span {
+#home .nome h1 span {
     color: #5025d1;
+    letter-spacing: 10px;
+}
+
+#home .nome  .purple {
+    color: #673de6;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #home .boxes h3 {
@@ -181,6 +189,7 @@ h4 {
 }
 
 #type-sales .boxes .teclados {
+   
     border-radius: 6px;
     width: 400px;
     height: 200px;
@@ -207,7 +216,7 @@ h4 {
 
 #type-sales .sales {
     border-radius: 6px;
-    background-color: #5025d1;
+  
     width: 400px;
     height: 200px;
     text-align: center;
@@ -225,15 +234,35 @@ h4 {
         transform: scale(1.1);
 }
 
+#most-saled .text {
+    align-items: center;
+   margin-left: 100px;
+}
+
+
+#most-saled .text h1 {
+    padding: 30px;
+}
+#most-saled .text h1::after {
+  
+    display: block;
+    content: "";
+    border-bottom: 1px solid black;
+    width: 100px;
+    margin-left: 10px;
+}
+
+
 #most-saled .boxes {
-    margin-top: 200px;
     align-items: center;
     justify-content: center;
     display: flex;
     gap: 150px;
     padding: 30px;
+    color: #fff;
 }
 #most-saled .mouse-1 {
+    border-radius: 6px;
     background-color: #673de6;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     align-items: center;
@@ -261,6 +290,7 @@ h4 {
     
 }
 #most-saled .mouse-2 {
+    border-radius: 6px;
     background-color: #673de6;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     height: 150px;
@@ -290,6 +320,7 @@ h4 {
 }
     
 #most-saled .nvme {
+    border-radius: 6px;
     background-color: #673de6;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     height: 150px;
@@ -305,11 +336,11 @@ h4 {
  }
 
  #most-saled .nvme .x {
-    color: red;
+    color: #000;
  }
 
  #most-saled .nvme .p {
-    color: blue;
+    color: red;
  }
 
  #most-saled .nvme .g {
@@ -319,6 +350,8 @@ h4 {
 
 
  #most-saled .box-baixo {
+    
+    color: #fff;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
@@ -333,6 +366,7 @@ h4 {
 }
     
 #most-saled .teclado-1 {
+    border-radius: 6px;
     background-color: #673de6;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     height: 150px;
@@ -356,6 +390,7 @@ h4 {
 }
     
 #most-saled .fone-1 {
+    border-radius: 6px;
     background-color: #673de6;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     height: 150px;
@@ -368,6 +403,45 @@ h4 {
 #most-saled .teclado-1 .setinha{
     font-size: 30px;
   
+ }
+
+
+ #about .box {
+    width: 100%;
+   height: 180px;
+    background-color:black;
+    color: #fff;
+
+ }
+
+
+
+
+ #about .box .purple {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ #about .box h1 {
+    color: #fff;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+ }
+ #about .box span {
+    color: #673de6;
+   
+ }
+
+ #about .box span .purple{
+  
+   
+ }
+
+ #about .box h4 {
+    font-size: 20px;
  }
 
     
