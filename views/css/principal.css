@@ -9,31 +9,40 @@ body {
 }
 
 header {
-    align-items: center;
-    justify-content: flex-end;
     display: flex;
-    background-color: #5025d1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
     height: 100px;
     width: 100%;
 }
 
-.navbar {
-    align-items: flex-end;
-
-
+header .text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #fff;
+    
 }
 
-.navbar li {
-    display: inline-flex;
-    margin-right: 10px;
-   
+header .text span {
+    color: #5025d1;
+}
 
+.navbar {
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    list-style: none;
+}
 
+.navbar li {
+    margin-right: 10px;
 }
 
 .navbar li a {
@@ -41,7 +50,6 @@ header {
     color: #fff;
     padding: 5px;
     transition: background-color 300ms ease-in-out;
-
 }
 
 .navbar li a:hover {
@@ -58,7 +66,12 @@ h4 {
 
 #home .nome h1 span {
     color: #5025d1;
-    letter-spacing: 10px;
+   
+}
+
+#home .nome h1 .store {
+    color: #5025d1;
+    margin-left: 15px;
 }
 
 #home .nome  .purple {
@@ -414,7 +427,14 @@ h4 {
 
  }
 
-
+#about .container .sobre {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: #5025d1;
+    font-size: 25px;
+}
 
 
  #about .box .purple {
@@ -440,4 +460,92 @@ h4 {
     font-size: 20px;
  }
 
+ #about .container h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+
+ #about .container .texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 115px;
+    
+   
+ }
+
+ #feedback .box {
+    display: flex;
+    flex-direction: column;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    
+ }
+
+ #feedback .box label {
+    display: flex;
+    font-weight: bolder;
+ }
+
+ #feedback .box input {
+    border: 1px solid #673de6;
+    border-radius: 4px;
+    padding: 10px;
+   margin-bottom: 10px;
+ }
+
+ #feedback .box input:hover {
+   
+    border: 1px solid #673de6;
+    border-radius: 4px;
+    padding: 10px;
+ }
+
+#feedback .box textarea {
+    border: 1px solid #673de6;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#feedback .box input::placeholder {
+    font-weight: bolder;
+}
+#feedback .box button {
+    font-family: 'Poppins';
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #673de6;
+}
+
+#feedback .box button:hover {
+    cursor: pointer;
+}
+
+footer .box {
+  
+    background-color: black;
+    color: #fff;
+    
+}
+
+footer .box .marca h2 {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer .box h4{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+footer .box span {
+    color: #5025d1;
+    
+}
     
