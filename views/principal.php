@@ -1,3 +1,8 @@
+<?php
+session_start();
+include ('../models/conexao.php');
+$conexao = new ConexaoDB('LANDING', 'localhost', 'root', '');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,20 +30,19 @@
         <li> <a href="#about">About</a></li>
         <li> <a href="#feedback">Contact</a></li>
         <li> <a href="../views/index.php">Entrar</a></li>
-
       </ul>
     </nav>
   </header>
   <section id="home">
     <div class="nome">
       <h1>Vele <span>Z </span> <span class="store">Store</span>  </h1>
-      <h4>The <span class="purple"> best </span> elletronics for you with best <span class="purple"> price </span> </h4>
+      <h4>The <span class="purple"> best </span> eletronics for you with best <span class="purple"> price </span> </h4>
     </div>
-
     <div class="boxes">
       <div class="quality">
         <img src="../models/imagens/controle-de-qualidade.png" alt="">
         <p>Quality <br>
+      
           Top quality products. <br> excellence you can trust!</p>
       </div>
 
@@ -857,6 +861,7 @@
 
   <!-- at the end of the body -->
   <script type="text/javascript" src="/vanilla-tilt.js"></script>
+  
 </body>
 
 </html>

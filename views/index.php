@@ -1,4 +1,5 @@
 <?php
+
 include ('../models/conexao.php');
 include ('../models/registro.php');
 ?>
@@ -13,6 +14,7 @@ include ('../models/registro.php');
 </head>
 
 <?php
+session_start();
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $conexao = new ConexaoDB('LANDING', 'localhost', 'root', '');
 
@@ -25,14 +27,19 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $resultado = $registrar->cadastrarPessoa($nome, $email, $telefone, $senha);
         if ($resultado){
-            echo 'Cadastro realizado com sucesso';
+            $_SESSION['nome'] = $nome;
+           $_SESSION['msg'] = "<p style='color:green;'> Usuario cadastrado com sucesso </p>";
+         
         } else {
-            echo "Pessoa ja cadastrada";
+            $_SESSION['msg'] = "<p style='color:red;'> Usuario nao cadastrado</p>";
         }
     }
 ?>
 <body>
     <form action="" method="post">
+        <?php
+
+        ?>
         <div class="container">
             <img src="../models/imagens/home.svg" alt="">
         <input type="text" name="nome" placeholder="Digite seu nome">
@@ -43,5 +50,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         <a href="login.php"> Já tenho uma conta</a>
         </div>
     </form>
+
+    <?php
+    if (isset($_SESSION['msg'])) {
+        echo $_SESSION['msg'];
+        unset($_SESSION['msg']); // Limpa a mensagem da sessão para que ela não seja exibida novamente
+    }
+    ?>
+
 </body>
 </html>
